@@ -1,0 +1,14 @@
+<div class="thoughts">
+	Thoughts:
+		{{#each}}
+			<div class="thought">
+				{{name}}
+			</div>
+		{{/each}}
+</div>
+
+<div class="new-thought-container">
+	New Thought:
+	{{input valueBinding="newThought"}}
+	<input type="button" {{action saveThought}} value="Save"/>
+</div>
